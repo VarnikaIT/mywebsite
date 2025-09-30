@@ -4,7 +4,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
   const form = e.target;
   const data = new FormData(form);
 
-  fetch("https://formsubmit.co/rvrbit0@gmail.com", {
+  fetch("https://formspree.io/f/xyznwppg", {
     method: "POST",
     body: data,
   })
