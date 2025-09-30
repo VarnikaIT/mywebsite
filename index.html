@@ -2,25 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Varnika IT | ERP & IT Services</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to My Website</h1>
-    <p>Fill out the form below to contact me.</p>
+  <header>
+    <h1>Varnika IT</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <form id="contact-form" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
+  <section class="hero">
+    <h2>Your Partner in ERP & IT Solutions</h2>
+    <p>Empowering businesses with smart, scalable, and secure technology solutions.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Varnika IT</h2>
+    <p>Varnika IT specializes in delivering end-to-end IT services and ERP solutions tailored to your business needs. From software development to enterprise resource planning, we help organizations streamline operations and achieve digital transformation.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>ERP Implementation</strong> – Customized ERP setup for small to mid-size enterprises.</li>
+      <li><strong>IT Consulting</strong> – Strategic IT planning and system design.</li>
+      <li><strong>Software Development</strong> – Web, desktop, and mobile applications.</li>
+      <li><strong>Cloud Integration</strong> – Cloud migration, hosting, and maintenance.</li>
+      <li><strong>Technical Support</strong> – On-demand IT support and monitoring.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xyznwppg" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="_replyto" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" required></textarea>
+
       <button type="submit">Send Message</button>
     </form>
+    <p>Email: <a href="mailto:rvrbit0@gmail.com">rvrbit0@gmail.com</a></p>
+  </section>
 
-    <p id="response"></p>
-  </div>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Varnika IT. All rights reserved.</p>
+  </footer>
 </body>
 </html>
